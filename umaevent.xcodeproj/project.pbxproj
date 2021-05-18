@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,51 @@
 		CC769C6B265016070094B377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC769C56265016060094B377 /* ContentView.swift */; };
 		CC769C6C265016070094B377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC769C57265016070094B377 /* Assets.xcassets */; };
 		CC769C6D265016070094B377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC769C57265016070094B377 /* Assets.xcassets */; };
+		CC87BB0426501D4000BD6B5A /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC87BB0326501D4000BD6B5A /* ReplayKit.framework */; };
+		CC87BB0726501D4000BD6B5A /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87BB0626501D4000BD6B5A /* SampleHandler.swift */; };
+		CC87BB0B26501D4000BD6B5A /* umascreen-uploader.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC87BB0126501D4000BD6B5A /* umascreen-uploader.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC87BB112650261D00BD6B5A /* ImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87BB102650261D00BD6B5A /* ImageCropper.swift */; };
+		CC87BB1326502D7C00BD6B5A /* DeviceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87BB1226502D7C00BD6B5A /* DeviceDetector.swift */; };
+		CC87BB1526502F2C00BD6B5A /* CropRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87BB1426502F2C00BD6B5A /* CropRange.swift */; };
+		CC87BB182650399F00BD6B5A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC87BB172650399F00BD6B5A /* Alamofire */; };
+		CC87BB1F265149AD00BD6B5A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC87BB1E265149AD00BD6B5A /* UserNotifications.framework */; };
+		CC87BB21265149AD00BD6B5A /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC87BB20265149AD00BD6B5A /* UserNotificationsUI.framework */; };
+		CC87BB24265149AD00BD6B5A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87BB23265149AD00BD6B5A /* NotificationViewController.swift */; };
+		CC87BB27265149AD00BD6B5A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC87BB25265149AD00BD6B5A /* MainInterface.storyboard */; };
+		CC87BB2B265149AD00BD6B5A /* event-notification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC87BB1D265149AD00BD6B5A /* event-notification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC87BB0926501D4000BD6B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC769C50265016060094B377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC87BB0026501D4000BD6B5A;
+			remoteInfo = "umascreen-uploader";
+		};
+		CC87BB29265149AD00BD6B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC769C50265016060094B377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC87BB1C265149AD00BD6B5A;
+			remoteInfo = "event-notification";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC87BB0C26501D4000BD6B5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC87BB2B265149AD00BD6B5A /* event-notification.appex in Embed App Extensions */,
+				CC87BB0B26501D4000BD6B5A /* umascreen-uploader.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC769C55265016060094B377 /* umaeventApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umaeventApp.swift; sourceTree = "<group>"; };
@@ -24,6 +68,19 @@
 		CC769C64265016070094B377 /* umaevent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umaevent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC769C66265016070094B377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC769C67265016070094B377 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CC87BB0126501D4000BD6B5A /* umascreen-uploader.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "umascreen-uploader.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC87BB0326501D4000BD6B5A /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		CC87BB0626501D4000BD6B5A /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		CC87BB0826501D4000BD6B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC87BB102650261D00BD6B5A /* ImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropper.swift; sourceTree = "<group>"; };
+		CC87BB1226502D7C00BD6B5A /* DeviceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetector.swift; sourceTree = "<group>"; };
+		CC87BB1426502F2C00BD6B5A /* CropRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropRange.swift; sourceTree = "<group>"; };
+		CC87BB1D265149AD00BD6B5A /* event-notification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "event-notification.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC87BB1E265149AD00BD6B5A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		CC87BB20265149AD00BD6B5A /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		CC87BB23265149AD00BD6B5A /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		CC87BB26265149AD00BD6B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CC87BB28265149AD00BD6B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +98,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC87BAFE26501D4000BD6B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC87BB0426501D4000BD6B5A /* ReplayKit.framework in Frameworks */,
+				CC87BB182650399F00BD6B5A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC87BB1A265149AD00BD6B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC87BB21265149AD00BD6B5A /* UserNotificationsUI.framework in Frameworks */,
+				CC87BB1F265149AD00BD6B5A /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +125,9 @@
 				CC769C54265016060094B377 /* Shared */,
 				CC769C5E265016070094B377 /* iOS */,
 				CC769C65265016070094B377 /* macOS */,
+				CC87BB0526501D4000BD6B5A /* umascreen-uploader */,
+				CC87BB22265149AD00BD6B5A /* event-notification */,
+				CC87BB0226501D4000BD6B5A /* Frameworks */,
 				CC769C5D265016070094B377 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +147,8 @@
 			children = (
 				CC769C5C265016070094B377 /* umaevent.app */,
 				CC769C64265016070094B377 /* umaevent.app */,
+				CC87BB0126501D4000BD6B5A /* umascreen-uploader.appex */,
+				CC87BB1D265149AD00BD6B5A /* event-notification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +170,38 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		CC87BB0226501D4000BD6B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC87BB0326501D4000BD6B5A /* ReplayKit.framework */,
+				CC87BB1E265149AD00BD6B5A /* UserNotifications.framework */,
+				CC87BB20265149AD00BD6B5A /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC87BB0526501D4000BD6B5A /* umascreen-uploader */ = {
+			isa = PBXGroup;
+			children = (
+				CC87BB0626501D4000BD6B5A /* SampleHandler.swift */,
+				CC87BB0826501D4000BD6B5A /* Info.plist */,
+				CC87BB102650261D00BD6B5A /* ImageCropper.swift */,
+				CC87BB1226502D7C00BD6B5A /* DeviceDetector.swift */,
+				CC87BB1426502F2C00BD6B5A /* CropRange.swift */,
+			);
+			path = "umascreen-uploader";
+			sourceTree = "<group>";
+		};
+		CC87BB22265149AD00BD6B5A /* event-notification */ = {
+			isa = PBXGroup;
+			children = (
+				CC87BB23265149AD00BD6B5A /* NotificationViewController.swift */,
+				CC87BB25265149AD00BD6B5A /* MainInterface.storyboard */,
+				CC87BB28265149AD00BD6B5A /* Info.plist */,
+			);
+			path = "event-notification";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +212,13 @@
 				CC769C58265016070094B377 /* Sources */,
 				CC769C59265016070094B377 /* Frameworks */,
 				CC769C5A265016070094B377 /* Resources */,
+				CC87BB0C26501D4000BD6B5A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC87BB0A26501D4000BD6B5A /* PBXTargetDependency */,
+				CC87BB2A265149AD00BD6B5A /* PBXTargetDependency */,
 			);
 			name = "umaevent (iOS)";
 			productName = "umaevent (iOS)";
@@ -127,6 +242,43 @@
 			productReference = CC769C64265016070094B377 /* umaevent.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CC87BB0026501D4000BD6B5A /* umascreen-uploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC87BB0F26501D4000BD6B5A /* Build configuration list for PBXNativeTarget "umascreen-uploader" */;
+			buildPhases = (
+				CC87BAFD26501D4000BD6B5A /* Sources */,
+				CC87BAFE26501D4000BD6B5A /* Frameworks */,
+				CC87BAFF26501D4000BD6B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "umascreen-uploader";
+			packageProductDependencies = (
+				CC87BB172650399F00BD6B5A /* Alamofire */,
+			);
+			productName = "umascreen-uploader";
+			productReference = CC87BB0126501D4000BD6B5A /* umascreen-uploader.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CC87BB1C265149AD00BD6B5A /* event-notification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC87BB2C265149AD00BD6B5A /* Build configuration list for PBXNativeTarget "event-notification" */;
+			buildPhases = (
+				CC87BB19265149AD00BD6B5A /* Sources */,
+				CC87BB1A265149AD00BD6B5A /* Frameworks */,
+				CC87BB1B265149AD00BD6B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "event-notification";
+			productName = "event-notification";
+			productReference = CC87BB1D265149AD00BD6B5A /* event-notification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +294,12 @@
 					CC769C63265016070094B377 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					CC87BB0026501D4000BD6B5A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CC87BB1C265149AD00BD6B5A = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = CC769C53265016060094B377 /* Build configuration list for PBXProject "umaevent" */;
@@ -153,12 +311,17 @@
 				Base,
 			);
 			mainGroup = CC769C4F265016060094B377;
+			packageReferences = (
+				CC87BB162650399F00BD6B5A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CC769C5D265016070094B377 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CC769C5B265016070094B377 /* umaevent (iOS) */,
 				CC769C63265016070094B377 /* umaevent (macOS) */,
+				CC87BB0026501D4000BD6B5A /* umascreen-uploader */,
+				CC87BB1C265149AD00BD6B5A /* event-notification */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +340,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC769C6D265016070094B377 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC87BAFF26501D4000BD6B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC87BB1B265149AD00BD6B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC87BB27265149AD00BD6B5A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +379,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC87BAFD26501D4000BD6B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC87BB0726501D4000BD6B5A /* SampleHandler.swift in Sources */,
+				CC87BB1526502F2C00BD6B5A /* CropRange.swift in Sources */,
+				CC87BB1326502D7C00BD6B5A /* DeviceDetector.swift in Sources */,
+				CC87BB112650261D00BD6B5A /* ImageCropper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC87BB19265149AD00BD6B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC87BB24265149AD00BD6B5A /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC87BB0A26501D4000BD6B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC87BB0026501D4000BD6B5A /* umascreen-uploader */;
+			targetProxy = CC87BB0926501D4000BD6B5A /* PBXContainerItemProxy */;
+		};
+		CC87BB2A265149AD00BD6B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC87BB1C265149AD00BD6B5A /* event-notification */;
+			targetProxy = CC87BB29265149AD00BD6B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC87BB25265149AD00BD6B5A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC87BB26265149AD00BD6B5A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CC769C6E265016070094B377 /* Debug */ = {
@@ -318,6 +539,7 @@
 		CC769C71265016070094B377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +562,7 @@
 		CC769C72265016070094B377 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +631,92 @@
 			};
 			name = Release;
 		};
+		CC87BB0D26501D4000BD6B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT8FYYV756;
+				INFOPLIST_FILE = "umascreen-uploader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tsuzu.umaevent.umascreen-uploader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC87BB0E26501D4000BD6B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT8FYYV756;
+				INFOPLIST_FILE = "umascreen-uploader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tsuzu.umaevent.umascreen-uploader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC87BB2D265149AD00BD6B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT8FYYV756;
+				INFOPLIST_FILE = "event-notification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tsuzu.umaevent.event-notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC87BB2E265149AD00BD6B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT8FYYV756;
+				INFOPLIST_FILE = "event-notification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.tsuzu.umaevent.event-notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,7 +747,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CC87BB0F26501D4000BD6B5A /* Build configuration list for PBXNativeTarget "umascreen-uploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC87BB0D26501D4000BD6B5A /* Debug */,
+				CC87BB0E26501D4000BD6B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC87BB2C265149AD00BD6B5A /* Build configuration list for PBXNativeTarget "event-notification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC87BB2D265149AD00BD6B5A /* Debug */,
+				CC87BB2E265149AD00BD6B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC87BB162650399F00BD6B5A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC87BB172650399F00BD6B5A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC87BB162650399F00BD6B5A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC769C50265016060094B377 /* Project object */;
 }
